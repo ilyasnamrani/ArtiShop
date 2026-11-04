@@ -48,6 +48,22 @@ const products = [
     price: 45,
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
+  },
+   {
+    id: 7,
+    name: "Plateau bordées du fès",
+    category: "Poterie",
+    price: 350,
+    stock: 6,
+    description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
+  },
+   {
+    id: 8,
+    name: "Plateau bordées du fès",
+    category: "Poterie",
+    price: 350,
+    stock: 6,
+    description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   }
 ];
 
