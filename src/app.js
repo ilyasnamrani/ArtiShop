@@ -3,6 +3,7 @@ const express = require("express");
 const path = require("path");
 const products = require("./data/products");
 const promoCodes = require("./data/promos");
+const deliveryFees = require("./data/delivery");
 
 // Crée une nouvelle application avec un panier vide.
 // Chaque test part d'un état propre.
@@ -32,6 +33,25 @@ function createApp() {
 
     res.json(result);
   });
+  // Calculer les frais de livraison
+app.get("/api/delivery/:city", (req, res) => {
+  const city = Object.keys(deliveryFees).find(
+    (name) =>
+      name.toLowerCase() ===
+      req.params.city.toLowerCase()
+  );
+
+  if (!city) {
+    return res.status(404).json({
+      error: "Ville non disponible"
+    });
+  }
+
+  res.json({
+    city,
+    deliveryFee: deliveryFees[city]
+  });
+});
 
   // Fiche produit
   app.get("/api/products/:id", (req, res) => {
