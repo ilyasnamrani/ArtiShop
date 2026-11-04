@@ -48,7 +48,15 @@ const products = [
     price: 45,
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
-  }
+  },
+  {
+id: 7, // le numéro qui suit le dernier produit
+name: "Tajine décoré de Safi",
+category: "Poterie",
+price: 190 ,
+stock: 10,
+description: "Tajine Bnin."
+}
 ];
 
 module.exports = products;
