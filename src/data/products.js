@@ -49,6 +49,7 @@ const products = [
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   },
+<<<<<<< HEAD
    {
     id: 7,
     name: "Plateau bordées du fès",
@@ -65,6 +66,16 @@ const products = [
     stock: 6,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   }
+=======
+  {
+id: 7, // le numéro qui suit le dernier produit
+name: "Tajine décoré de Safi",
+category: "Poterie",
+price: 190 ,
+stock: 10,
+description: "Tajine Bnin."
+}
+>>>>>>> a00bea7d6ffffea894c119918646ffc590755beb
 ];
 
 module.exports = products;
